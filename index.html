@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valentine 💖</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6f0;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #e60073;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #ff66b2;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #e60073;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Will you be my valentine? 💘</h1>
+
+    <!-- IMAGE DISPLAY -->
+    <img id="valentineImage" src="image1.jpg" alt="Valentine Image">
+
+    <br>
+
+    <!-- BUTTONS -->
+    <button onclick="changeImage()">Yes</button>
+    <button onclick="changeImage()">Definitely</button>
+
+    <script>
+        /*
+        ================================
+        🖼️ IMAGE UPLOAD SECTIONd
+        ================================
+        1. Put your images in the SAME folder as this file
+        2. Replace the file names below with your own
+        */
+
+        const imageBefore = "image1.jpg"; // shown first
+        const imageAfter = "image2.jpg";  // shown after click
+
+        function changeImage() {
+            document.getElementById("valentineImage").src = imageAfter;
+        }
+    </script>
+
+</body>
+</html>
